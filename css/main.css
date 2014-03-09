@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
 }
+
 body {
     font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Helvetica,sans-serif;
     letter-spacing: -0.02em;
@@ -14,7 +15,7 @@ body {
 
 header {
     position: absolute;
-    margin-left: 40px;
+    margin: 0 40px;
     top: 50%;
     margin-top: -135px;
 }
