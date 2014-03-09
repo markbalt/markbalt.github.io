@@ -39,6 +39,7 @@ header h1 {
 .stuff {
     font-size: 14px;
     color: #999;
+    padding-bottom: 20px;
 }
 
 .stuff ul {
