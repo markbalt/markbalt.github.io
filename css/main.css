@@ -15,7 +15,7 @@ body {
 
 header {
     position: absolute;
-    margin: 0 40px;
+    margin: -135px 40px 40px 40px;
     top: 50%;
     margin-top: -135px;
 }
