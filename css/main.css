@@ -3,29 +3,41 @@ html, body {
 }
 
 body {
-    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Helvetica,sans-serif;
-    letter-spacing: -0.02em;
-    font-style: normal;
-    color: #333;
-    font-size: 18px;
-    line-height: 1.4;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
+    font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    height: 63px;
+    letter-spacing: -0.42px;
+    line-height: 33px;
+    margin-bottom: 60px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 30px;
+    text-align: center;
 }
 
 header {
-    position: absolute;
-    margin: -135px 40px 40px 40px;
-    top: 50%;
-    margin-top: -135px;
+    xposition: absolute;
+    margin: 115px 40px 40px 40px;
+    xtop: 50%;
 }
 
 header h1 {
-    font-weight: 700;
-    font-style: normal;
-    font-size: 50px;
-    letter-spacing: -0.04em;
-    line-height: 1;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 72px;
+    font-weight: 100;
+    letter-spacing: 11px;
+    line-height: 72px;
+    margin-bottom: 11px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 22px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .stuff:before {
