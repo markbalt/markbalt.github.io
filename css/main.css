@@ -18,9 +18,7 @@ body {
 }
 
 header {
-    xposition: absolute;
     margin: 115px 40px 40px 40px;
-    xtop: 50%;
 }
 
 header h1 {
@@ -38,6 +36,17 @@ header h1 {
     margin-top: 22px;
     text-align: center;
     text-transform: uppercase;
+}
+
+@media (max-width: 400px) {
+header h1 {
+    font-size: 46px !important;
+    word-wrap: break-word !important;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
 }
 
 .stuff:before {
