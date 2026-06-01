@@ -1,39 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mark Baltrusaitis</title>
-    
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    
-    <link href="css/main.css" rel="stylesheet">
-    
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    </head>
-    <body>
-  
-    <!-- Begin page content -->
-    <header>
-        <h1>Mark<br />Baltrusaitis</h1>
-        <p>
-        I'm a software engineer, avid soccer player, reader of nonfiction books, husband, father, etc. living in Pittsburgh.  I am currently working as Director of Information Systems at Expedient.
+    <meta
+      name="description"
+      content="Mark Baltrusaitis — SVP of Information Systems at Expedient. Leading teams to solve complex business challenges with web applications, cloud-native technologies, BI, and Scrum."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['DM Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+              display: ['DM Serif Display', 'ui-serif', 'Georgia', 'serif'],
+            },
+            colors: {
+              ink: '#1a1a1a',
+              paper: '#fafaf7',
+              muted: '#6b6b66',
+              rule: '#1a1a1a',
+              accent: '#b04a2f',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-full bg-paper font-sans text-ink antialiased">
+    <main
+      class="mx-auto flex min-h-screen max-w-2xl flex-col justify-center px-6 py-20 sm:px-10"
+    >
+      <header class="mb-10">
+        <h1
+          class="font-display text-6xl font-normal leading-[0.95] tracking-tight sm:text-7xl"
+        >
+          Mark<br />Baltrusaitis
+        </h1>
+        <div class="mt-8 h-px w-16 bg-rule"></div>
+        <p
+          class="mt-6 text-sm font-medium uppercase tracking-[0.18em] text-muted"
+        >
+          SVP, Information Systems &middot;
+          <a
+            href="https://www.expedient.com"
+            class="underline decoration-1 underline-offset-[4px] transition hover:text-accent hover:decoration-accent"
+            >Expedient</a
+          >
         </p>
-        <div class="stuff">
-            <ul>
-                <li><a href="https://github.com/markbalt">github.com/markbalt</a></li>
-                <li><a href="http://www.linkedin.com/in/markbalt">linkedin.com/markbalt</a></li>
-                <li><a href="https://www.facebook.com/markba">facebook.com/markba</a></li>
-            </ul>
-        </div>
-    </header>
-    
-    </body>
+      </header>
+
+      <section
+        class="mb-14 max-w-xl text-lg leading-relaxed text-ink/85 sm:text-xl"
+      >
+        <p>
+          My passion is leading teams to solve complex business challenges. I
+          specialize in web applications, cloud-native technologies, business
+          intelligence and Scrum. I'm a Pitt MBA graduate and a lifelong
+          learner, an avid fitness enthusiast, a husband, and father.
+        </p>
+      </section>
+
+      <nav aria-label="Social links" class="text-base sm:text-lg">
+        <ul
+          class="flex flex-wrap items-center gap-x-2 gap-y-2 font-medium text-ink"
+        >
+          <li>
+            <a
+              href="https://markbalt.medium.com"
+              class="underline decoration-1 underline-offset-[6px] transition hover:text-accent hover:decoration-accent"
+              >Medium</a
+            >
+          </li>
+          <li aria-hidden="true" class="text-muted">&middot;</li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/markbalt"
+              class="underline decoration-1 underline-offset-[6px] transition hover:text-accent hover:decoration-accent"
+              >LinkedIn</a
+            >
+          </li>
+          <li aria-hidden="true" class="text-muted">&middot;</li>
+          <li>
+            <a
+              href="https://github.com/markbalt"
+              class="underline decoration-1 underline-offset-[6px] transition hover:text-accent hover:decoration-accent"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <footer class="mt-20 text-xs uppercase tracking-[0.18em] text-muted">
+        <p>&copy; <span id="year"></span> Mark Baltrusaitis</p>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
